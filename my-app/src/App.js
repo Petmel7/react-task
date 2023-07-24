@@ -1,17 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
 import { Sidebar } from './components/Sidebar';
+// Приклад імпорту TypeScript модуля у Node.js
+// const { someFunction } = require('./some-module');
+
 // import { Sidebar } from './components/Sidebar';
 
 function App() {
 
-  // const first : number = 1;
-  // const second: number = 2;
-  
-  // const sum = (a, b) => a + b;
+  // const func = (value) => {
+  //   console.log("Helo", value)
+  // }
+
+  const condition = false
 
   return (
     <div className="App">
+
+      {condition ? <h2>True</h2> : <h2>False</h2>}
       
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -28,8 +34,21 @@ function App() {
         </a>
       </header> */}
 
-      <h1>GoIt</h1>
-      <Sidebar/>
+      {/* <h1>GoIt</h1>
+      <Sidebar
+        text="Sidebar"
+        number={7}
+        dog="Tomik"
+
+        testObject={{
+          name: "Petro",
+          lastName: "Melychyn"
+        }}
+
+        testArray={[1, 2, 3, 4, 5]}
+        testFunc={func}
+        callBackFunc={(e) => func(e.target)}
+      /> */}
     </div>
   );
 }
