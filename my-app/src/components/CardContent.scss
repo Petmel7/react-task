@@ -1,0 +1,11 @@
+@import "../shared/styles/common";
+
+.card-content-container {
+    height: 180px;
+    width: 236px;
+    @include flex(center, center);
+}
+
+.card-title {
+    color:_$primary-color;
+}

@@ -22,10 +22,17 @@ import './Card.css';
 import cardContentJson from '../data/CardContent.json';
 import { CardContent } from './CardContent';
 
+// const { title, duration, price } = cardContentJson;
+
 export const Card = () => {
     return (
         <div className={`card-container card-border`}>
-            <CardContent />
+            <CardContent
+                // title={title}
+                // duration={duration}
+                // price={price}
+                {...cardContentJson}
+            />
         </div>
     )
 }
