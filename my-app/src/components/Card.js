@@ -21,8 +21,9 @@
 import './Card.css';
 import cardContentJson from '../data/CardContent.json';
 import { CardContent } from './CardContent';
+// import { CardButton } from './CardButton';
 
-// const { title, duration, price } = cardContentJson;
+const { username, tag, location, avatar, stats } = cardContentJson;
 
 export const Card = () => {
     return (
@@ -31,7 +32,14 @@ export const Card = () => {
                 // title={title}
                 // duration={duration}
                 // price={price}
-                {...cardContentJson}
+            
+            username={username}
+            tag={tag}
+            location={location}
+            avatar={avatar}
+            stats={stats}
+            
+                // {...cardContentJson}
             />
         </div>
     )

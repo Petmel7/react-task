@@ -5,7 +5,7 @@ import './App.css';
 // const { someFunction } = require('./some-module');
 
 import { Card } from './components/Card';
-import "./shared/styles/styles.scss";
+// import "./shared/styles/styles.scss";
 
 function App() {
 
