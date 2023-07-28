@@ -1,4 +1,4 @@
-import data from '../data/Stats.json'
+import dataStatsJson from '../data/Stats.json'
 
 export const NewPage = () => {
     return (
@@ -6,7 +6,7 @@ export const NewPage = () => {
             <h2 className="title">Upload stats</h2>
 
             <ul className="stat-list">
-                {data.map((item) => (
+                {dataStatsJson.map((item) => (
                     <li className="item" key={item.id}>
                         <span className="stat-label">{item.label}</span>
                         <span className="percentage">{item.percentage}</span>
