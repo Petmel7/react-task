@@ -1,45 +1,29 @@
-// export const Sidebar = ({ testObject, text, number, dog }) => {
-
-//     return (
-//      <>
-//             <h1>Hello React</h1>
-//             <h2>{}</h2>
-//             <p>{text}{number}</p>
-//             <p>{dog}</p>
-//      </>
-//     )
-// }
-
-// const myStyles = {
-//     height: "257px",
-//     width: "457px",
-//     borderRadius: "30px",
-//     background: "#fff",
-//     boxShadow: "2px 6px 30px 0px rgba(0, 0, 0, 0.10)"
-// }
 
 import './Card.css';
 import cardContentJson from '../data/CardContent.json';
+import StatsJson from '../data/Stats.json';
 import { CardContent } from './CardContent';
 // import { CardButton } from './CardButton';
+import { NewPage } from './NewPage';
 
-const { username, tag, location, avatar, stats } = cardContentJson;
+// const { username, tag, location, avatar, stats } = cardContentJson;
 
 export const Card = () => {
     return (
         <div className={`card-container card-border`}>
             <CardContent
-                // title={title}
-                // duration={duration}
-                // price={price}
+                
+            // username={username}
+            // tag={tag}
+            // location={location}
+            // avatar={avatar}
+            // stats={stats}
             
-            username={username}
-            tag={tag}
-            location={location}
-            avatar={avatar}
-            stats={stats}
-            
-                // {...cardContentJson}
+                {...cardContentJson}
+            />
+            {/* <CardButton /> */}
+            <NewPage
+                {...StatsJson}
             />
         </div>
     )

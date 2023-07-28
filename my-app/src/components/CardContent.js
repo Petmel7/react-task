@@ -35,7 +35,7 @@ export const CardContent = ({
                   <span className="label">Likes</span>
                   <span className="quantity">{stats.likes}</span>
                 </li>
-              </ul>
+            </ul>
           </div>
         </div>
     )
