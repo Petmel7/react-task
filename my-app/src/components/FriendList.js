@@ -2,13 +2,14 @@ import dataFriendJson from '../data/Friends.json';
 
 export const FriendList = () => {
     return (
-        <ul class="friend-list">
+        <ul className="friend-list">
             {dataFriendJson.map((item) => (
-            <li class="item" key={item.id}>
-                <span class="status">{item.isOnline}</span>
-                <img class="friend-avatar" src={item.avatar}
+            <li className="item" key={item.id}>
+                <span className={item.isOnline ? "status-online" : "status-offline"}>
+                {item.isOnline ? "Online" : "Offline"}</span>
+                <img className={item.isOnline ? "friend-online" : "friend-offline"} src={item.avatar}
                 alt="User avatar" width="48" />
-                <p class="name">{item.name}</p>
+                <p className="name">{item.name}</p>
             </li>
             ))}
         </ul>

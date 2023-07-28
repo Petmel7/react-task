@@ -9,7 +9,7 @@ import { NewPage } from './NewPage';
 import { FriendList } from './FriendList';
 
 // const { username, tag, location, avatar, stats } = cardContentJson;
-const { avatar, name, isOnline, id } = dataFriendJson;
+// const { avatar, name, isOnline, id } = dataFriendJson;
 
 export const Card = () => {
     return (
@@ -28,12 +28,11 @@ export const Card = () => {
             <NewPage {...StatsJson} />
             
             <FriendList 
-                avatar={avatar}
-                name={name}
+                // avatar={avatar}
+                // name={name}
                 // isOnline={isOnline}
-                // isOnline={isOnline === false ? <h3>Online</h3> : <h3>Ofline</h3>}
-                isOnline={<h3>{isOnline ? "Online" : "Offline"}</h3>}
-                id={id}
+                // id={id}
+                {...dataFriendJson}
             />
         </div>
     )
