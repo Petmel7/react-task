@@ -1,8 +1,9 @@
-import { TransitionJson } from "../data/Transactions.json"
+import TransactionJson from "../data/Transactions.json";
+import TransactionCss from '../components/Style.css/Transaction.module.css';
 
 export const TransactionHistory = () => {
     return (
-        <table class="transaction-history">
+        <table className={TransactionCss.transactionHistory}>
             <thead>
                 <tr>
                     <th>Type</th>
@@ -12,16 +13,13 @@ export const TransactionHistory = () => {
             </thead>
 
             <tbody>
-                <tr>
-                    <td>Invoice</td>
-                    <td>125</td>
-                    <td>USD</td>
+                {TransactionJson.map((transaction) => (
+                <tr key={transaction.id}>
+                    <td>{transaction.type}</td>
+                    <td>{transaction.amount}</td>
+                    <td>{transaction.currency}</td>
                 </tr>
-                <tr>
-                    <td>Withdrawal</td>
-                    <td>85</td>
-                    <td>USD</td>
-                </tr>
+                ))}
             </tbody>
         </table>
     )

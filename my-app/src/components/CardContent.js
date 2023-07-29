@@ -1,5 +1,4 @@
-// import "./CardContent.scss"
-// import CardContentJson from '../data/CardContent.json';
+import CardCss from '../components/Style.css/CardContent.module.css';
 
 export const CardContent = ({
   username,
@@ -9,31 +8,31 @@ export const CardContent = ({
   stats, }) => {
   
     return (
-        <div className="card-content-container">
+        <div className={CardCss.cardContainer}>
           <div className="profile">
-            <div className="description">
+            <div className={CardCss.description}>
               <img
                 src={avatar}
                 alt="User avatar"
-                className="avatar"
+                className={CardCss.avatar}
               />
-                <p className="name">{username}</p>
-                <p className="tag">{tag}</p>
-                <p className="location">{location}</p>
+                <p className={CardCss.name}>{username}</p>
+                <p className={CardCss.tag}>{tag}</p>
+                <p className={CardCss.location}>{location}</p>
               </div>
 
-              <ul class="stats">
+              <ul class={CardCss.stats}>
                 <li>
-                  <span className="label">Followers</span>
-                  <span className="quantity">{stats.followers}</span>
+                  <span className={CardCss.label}>Followers</span>
+                  <span className={CardCss.quantity}>{stats.followers}</span>
                 </li>
                 <li>
-                  <span className="label">Views</span>
-                  <span className="quantity">{stats.views}</span>
+                  <span className={CardCss.label}>Views</span>
+                  <span className={CardCss.quantity}>{stats.views}</span>
                 </li>
                 <li>
-                  <span className="label">Likes</span>
-                  <span className="quantity">{stats.likes}</span>
+                  <span className={CardCss.label}>Likes</span>
+                  <span className={CardCss.quantity}>{stats.likes}</span>
                 </li>
             </ul>
           </div>

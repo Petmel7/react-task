@@ -1,0 +1,41 @@
+.statistics {
+    height: 120px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 2px 6px 30px 0px rgba(0, 0, 0, 0.10)
+}
+
+.title {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.statList {
+    display: flex;
+    justify-content: center;
+}
+
+.statList li {
+    list-style: none;
+    margin-right: 35px;
+}
+
+.statList li:nth-child(5) {
+    margin: 0;
+}
+
+.statList li span {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.statLabel {
+    color: rgb(120, 120, 120);
+}
+
+.percentage {
+    font-weight: 700;
+}

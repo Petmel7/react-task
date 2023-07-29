@@ -1,0 +1,75 @@
+.cardContainer {
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: #fff;
+    box-shadow: 2px 6px 30px 0px rgba(0, 0, 0, 0.10)
+}
+
+:hover.card-border {
+    box-shadow: 2px 6px 30px 0px rgba(0, 0, 0, 0.18)
+}
+
+.avatar {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    box-shadow: 2px 6px 30px 0px rgba(0, 0, 0, 0.30)
+}
+
+:hover.avatar {
+    box-shadow: 2px 6px 30px 0px rgba(0, 0, 0, 0.50)
+}
+
+.description {
+    text-align: center;
+}
+
+.description p {
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.tag,
+.location {
+    font-size: large;
+    color: rgb(120, 120, 120);
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.stats li {
+    margin-right: 70px;
+    text-align: center;
+}
+
+.stats li span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stats li:nth-child(3) {
+    margin-right: 0;
+}
+
+.label {
+    color: rgb(120, 120, 120);
+}
+
+.quantity {
+    font-weight: 700;
+}
